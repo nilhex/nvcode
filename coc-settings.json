@@ -88,12 +88,6 @@
     "javascript": "javascriptreact"
   },
 
-  // CSS (disable since I'm also using stylelintplus)
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "wxss.validate": false,
-
   // explorer
   "explorer.width": 30,
   "explorer.file.root.template": "[icon] [git] [hidden & 1][root]",
@@ -104,6 +98,20 @@
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
+  },
+
+  // languageserver
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/", "CMakeLists.txt"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
   },
 
   /* "languageserver": { */
