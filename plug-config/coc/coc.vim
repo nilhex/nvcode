@@ -22,6 +22,8 @@ else
 endif
 
 " GoTo code navigation.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -58,6 +60,8 @@ augroup mygroup
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
   " Update signature help on jump placeholder.
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+
+  autocmd FileType python let b:coc_root_patterns = ['__init__.py', 'requirements.txt']
 augroup end
 
 " Applying codeAction to the selected region.

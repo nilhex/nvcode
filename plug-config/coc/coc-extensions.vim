@@ -1,6 +1,5 @@
 let g:coc_global_extensions = [
   \ 'coc-actions',
-  \ 'coc-bookmark',
   \ 'coc-cmake',
   \ 'coc-emmet',
   \ 'coc-emoji',
@@ -11,6 +10,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-lists',
   \ 'coc-marketplace',
+  \ 'coc-metals',
   \ 'coc-pairs',
   \ 'coc-prettier',
   \ 'coc-pyright',
