@@ -1,12 +1,15 @@
 let g:coc_global_extensions = [
   \ 'coc-actions',
   \ 'coc-cmake',
+  \ 'coc-css',
+  \ 'coc-cssmodules',
   \ 'coc-emmet',
   \ 'coc-emoji',
   \ 'coc-explorer',
   \ 'coc-floaterm',
   \ 'coc-fzf-preview',
   \ 'coc-go',
+  \ 'coc-html',
   \ 'coc-json',
   \ 'coc-lists',
   \ 'coc-marketplace',
@@ -18,6 +21,7 @@ let g:coc_global_extensions = [
   \ 'coc-rust-analyzer',
   \ 'coc-sh',
   \ 'coc-snippets',
+  \ 'coc-stylelintplus',
   \ 'coc-svg',
   \ 'coc-tasks',
   \ 'coc-tsserver',
@@ -28,4 +32,5 @@ let g:coc_global_extensions = [
   \ ]
   " \ 'coc-tabnine',
   " \ 'coc-highlight',
+  " \ 'coc-bookmark',
 
